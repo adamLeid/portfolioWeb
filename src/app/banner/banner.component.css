@@ -1,0 +1,56 @@
+.banner-container {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 20px;
+  position: relative; /* Set position to relative */
+}
+
+.banner-content {
+  display: flex;
+  flex: 1;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+.banner-slider {
+  display: flex;
+  padding: 0;
+  transition: transform 0.5s ease;
+}
+
+.banner-item {
+  flex: 0 0 100%; /* Each item takes up one-third of the container */
+  /* margin: 0 10px; */
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+/* Button Styles */
+.banner-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.banner-button.left {
+  left: 10px;
+}
+
+.banner-button.right {
+  right: 10px;
+}
