@@ -1,5 +1,5 @@
 <div class="banner-container">
-    <button class="banner-button left" (click)="rotateLeft()">&#9664;</button>
+    <button class="banner-button left" (click)="rotateLeft()">&#8592;</button>
     <div class="container banner-content">
         <div #bannerContent class="container banner-slider" [style.transform]="getTransform()">
             <button class="banner-item" (click)="alertItem('item')">Item 1</button>
@@ -9,5 +9,5 @@
             <button class="banner-item" (click)="alertItem('item')">Item 5</button>
         </div>
     </div>
-    <button class="banner-button right" (click)="rotateRight()">&#9654;</button>
+    <button class="banner-button right" (click)="rotateRight()">&#8594;</button>
 </div>

@@ -34,17 +34,22 @@
 
 /* Button Styles */
 .banner-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 5px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  color: white; /* White arrow icon */
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 40%; /* Circular buttons */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.banner-button:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+  transform: translateY(-50%) scale(1.1); /* Slightly enlarge the button */
 }
 
 .banner-button.left {
